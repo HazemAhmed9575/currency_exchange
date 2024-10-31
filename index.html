@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ================================================== -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- ================================================== -->
+    <title>Currency Exchange</title>
+  </head>
+  <body>
+    <div class="project">
+      <!-- nav banner -->
+      <nav class="navbar bg-black">
+        <div
+          class="navbar-brand d-flex w-100 justify-content-around align-items-center">
+          <img
+            src="https://exchanger-nine.vercel.app/images/nav-banner.png"
+            class="rounded logo"
+            width="8%" />
+          <p class="text-warning fs-4">Currency-Converter</p>
+        </div>
+      </nav>
+      <!-- end nav banner -->
+      <!-- Currency Exchange -->
+      <div class="container">
+        <div
+          class="d-flex justify-content-center align-items-center"
+          style="height: 88vh">
+          <section class="w-75 h-75 bg-light rounded p-5 main-section">
+            <!-- currenyAmount -->
+            <div class="position-relative">
+              <label for="currenyAmount" class="labelAmount">Amount</label>
+              <input
+                id="currenyAmount"
+                type="text"
+                class="curreny-amount pe-4 ps-4"
+                placeholder="1 By Default" />
+              <span id="change" class="material-symbols-outlined arrow-logo">
+                sync_alt
+              </span>
+            </div>
+            <!-- end currenyAmount  -->
+            <!--currency  -->
+            <div>
+              <!-- currencyFrom -->
+              <div
+                class="currency w-100 position-relative d-flex justify-content-center mt-4">
+                <img id="countryFrom" src="" class="countryFlag" />
+                <select
+                  id="currencyFrom"
+                  class="bg-black text-light p-2 ps-5 w-75 from"></select>
+              </div>
+              <!-- end currencyFrom  -->
+              <!-- currencyTo -->
+              <div
+                class="w-100 position-relative d-flex justify-content-center mt-4">
+                <img id="countryTo" src="" class="countryFlag" />
+                <select
+                  id="currencyTo"
+                  class="bg-black text-light p-2 ps-5 w-75 from"></select>
+              </div>
+              <!--end currencyTo -->
+              <!-- but -->
+              <div
+                class="w-100 position-relative d-flex justify-content-center mt-4">
+                <button id="Convert" class="btn btn-dark w-75 convert-button">
+                  Convert
+                </button>
+              </div>
+              <!-- but -->
+              <!-- h1 -->
+              <div
+                class="from-currency w-100 position-relative d-flex justify-content-center mt-4">
+                <h1 id="CurrencyExchange" class="text-white"></h1>
+              </div>
+              <!-- h1 -->
+            </div>
+            <!-- end currency -->
+          </section>
+        </div>
+      </div>
+      <!-- end Currency Exchange -->
+    </div>
+
+    <script src="js/indx.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 700 !important;
+}
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+input:focus {
+  outline: none !important;
+}
+.project {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, black, 80%, #959ca2);
+}
+.logo {
+  transition: 0.5s all;
+}
+.logo:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.main-section {
+  background: linear-gradient(170deg, black, teal);
+}
+
+.labelAmount {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.curreny-amount {
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid royalblue;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+.arrow-logo {
+  color: #0466e7;
+  position: absolute;
+  right: 0.4em;
+  font-size: 2em;
+  bottom: 0.2em;
+  cursor: pointer;
+}
+.countryFlag {
+  position: absolute;
+  left: 15%;
+  top: 14%;
+}
